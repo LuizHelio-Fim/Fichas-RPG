@@ -1,66 +1,94 @@
 body {
     background-color: #373636;
     max-width: 767px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
-button#voltar {
-    background-color: #373636;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
 }
 
 h1 {
     color: #15aaff;
-    text-align: center;
-    font-family: Inter;
-    font-size: 95px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: normal;
-}
-
-div {
+    margin: 0;
     text-align: center;
 }
 
-div#user {
-    font-weight: 500;
-    font-size: 25px;
-    color: #15aaff;
+section {
+    text-align: center;
+    padding: 20px 0;
 }
 
-div#senha01 {
-    font-weight: 500;
-    font-size: 25px;
+p {
+    font-size: 18px;
     color: #15aaff;
-}
-
-div#senha02 {
-    font-weight: 500;
-    font-size: 25px;
-    color: #15aaff;
+    margin: 20px 0;
 }
 
 input {
-    margin-top: -15px;
-    width: 300px;
-    height: 50px;
+    width: 100%;
+    height: 40px;
     border-radius: 20px;
-    font-size: 35px;
-    background-color: #f8f7f3;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #15aaff;
 }
 
-button#confirm {
-    margin-top: 65px;
-    width: 400px;
-    height: 55px;
+button {
+    width: 100%;
+    height: 50px;
     border-radius: 20px;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 18px;
     color: #f8f7f3;
     background-color: #15aaff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button#voltar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button#voltar svg {
+    fill: #15aaff;
+    width: 20px;
+    height: 20px;
+}
+
+button#mostrarSenha01,
+button#mostrarSenha02 {
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    color: #15aaff;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+button#mostrarSenha01:hover,
+button#mostrarSenha02:hover {
+    transform: scale(1.1);
 }
 
 footer {
-    margin-top: 43px;
     color: #f8f7f3;
-    text-align: center;
     font-style: italic;
+    margin-top: 20px;
+    text-align: center;
 }
